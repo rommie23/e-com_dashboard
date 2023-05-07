@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NAVIGATION BAR */
+.nav{
+  background-color: #cfedfa;
+}
+.logo{
+  width: 6.2rem;
+  float: left;
+  border-radius: 50%;
+  margin-top: -20px;
+  position: absolute;
+}
+.nav-ul{
+  display: flex;
+  justify-content: flex-start;
+  padding: .3rem;
+  background-color: #cfedfa;
+  margin: 0;
+  margin-left: 100px;
+}
+.nav-ul-right{
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-ul li{
+  list-style: none;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.nav-ul li a{
+  color: dodgerblue;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.nav-ul li a:hover{
+  color: white;
+  text-decoration: underline;
+  background-color: dodgerblue;
+  border-radius: 4px;
+  
+}
+
+/* FOOTER FOR ALL PAGES */
+#footer{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #cfedfa;
+  color: dodgerblue;
+}
+
+/* SIGNUP PAGE */
+
+.signup, .product{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.login{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#signup-card, #login-card{
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.3rem;
+  box-shadow: 5px 5px 10px rgb(56, 56, 56);
+  color: rgb(74, 74, 74);;
+  background-color: #cfedfa;
+}
+
+#signup-card h2, #login-card h2{
+  width: 100%;
+  text-align: left;
+}
+#signup-card .inputLabel, #login-card .inputLabel{
+  width: 100%;
+  text-align: left;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#signup-card .inputBox, #login-card .inputBox{
+  width: 100%;
+  text-align: left;
+  padding: .3em;
+  font-size: 1rem;
+  border-width: 0px 0px 2px 0px;
+  background-color: #cfedfa;
+  color: dodgerblue;
+}
+
+#signup-card .inputBox:focus{
+  outline: none;
+}
+
+#signup_btn{
+  margin: 20px 0px 4px 0px;
+  font-size: 1rem;
+  padding: 0.3em 2.8em;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 7px;
+  color: #f1f1f1;
+  transition: all .2s;
+}
+#signup_btn:hover{
+  border-inline: 2px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
+  border-radius: 7px;
+  color: dodgerblue;
+  background-color: #f1f1f1; 
+}
+#signup_btn:active{
+  transform: scale(.95);
+}
+
+
+/* Add products */
+.product-card{
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.3rem;
+  /* color: rgb(74, 74, 74); */
+  /* background-color: #cfedfa; */
+  width: 45%;
+}
+
+.product-card .inputLabel{
+  width: 100%;
+  text-align: left;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-card .inputBox{
+  width: 100%;
+  text-align: left;
+  padding: .3em;
+  font-size: 1rem;
+  border-width: 0px 0px 2px 0px;
+  /* background-color: #cfedfa; */
+  border-radius: .2rem;
+  color: dodgerblue;
+}
+.invalid-input{
+  color: red;
+  align-self: flex-start;
+}
+
+#add_btn{
+  margin: 20px 0px 4px 0px;
+  font-size: 1rem;
+  padding: 0.3em 2.8em;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 7px;
+  color: #f1f1f1;
+  transition: all .2s;
+}
+
+#add_btn:hover{
+  box-sizing: border-box;
+  border: 2px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
+  border-radius: 7px;
+  color: dodgerblue;
+  background-color: #f1f1f1; 
+}
+#add_btn:active{
+  transform: scale(.95);
+}
+
+
+/* PRODUCTS LIST */
+
+.product-list{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.product-list ul li{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  width: 150px;
+}
+#search{
+  margin: 15px 10px;
+}
